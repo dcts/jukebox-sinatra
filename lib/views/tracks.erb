@@ -1,0 +1,9 @@
+<a href="/albums/<%= @track.album.album_id %>">up</a>
+<h2>Artist: <%= @track.album.artist.name %></h2>
+<h3>Album: <%= @track.album.title %></h3>
+<h4>Track: <%= @track.title %></h4>
+<li><b>Composer: </b><%= @track.composer %></li>
+<li><b>Length: </b><%= @track.min_length.round(2) %> min</li>
+<li><b>Price: </b><%= @track.unit_price %> €</li>
+<li><b>Filesize: </b><%= @track.megabytes.round(2) %> MB</li>
+<li><b>Track-Id: </b><%= @track.track_id %></li>

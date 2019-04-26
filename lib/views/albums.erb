@@ -1,0 +1,9 @@
+<a href="/artists/<%= @album.artist.artist_id %>">up</a>
+<h2>Artist: <%= @album.artist.name %></h2>
+<h3>Album: <%= @album.title %></h3>
+<% @album.tracks.each do |track| %>
+  <li>
+    <a href="/tracks/<%= track.track_id %>"><%= track.title %></a>
+  </li>
+<% end %>
+
